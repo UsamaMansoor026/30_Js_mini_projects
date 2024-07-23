@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Card Generator | Maan</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <div class="form_fields">
+        <input
+          type="text"
+          id="cardNo"
+          placeholder="Card Number..."
+          autocomplete="off"
+        />
+        <div class="shapper">
+          <input
+            type="text"
+            id="cardHolderName"
+            placeholder="Card Holder Name..."
+            autocomplete="off"
+          />
+          <input
+            type="text"
+            id="cardValidity"
+            placeholder="Validity Data..."
+            autocomplete="off"
+          />
+        </div>
+        <button type="button" id="generate">Generate</button>
+      </div>
+      <hr />
+
+      <!-- Card -->
+      <div class="card">
+        <div class="top">
+          <h3>Maan Bank</h3>
+          <p>credit card</p>
+        </div>
+        <div class="chip">
+          <img src="./assets/cardChip.png" />
+        </div>
+        <div class="cardDetails">
+          <p id="cardnumber"></p>
+          <div class="valid">
+            <p class="tag"><span>Valid</span><span>Thru</span></p>
+            <p id="cardValidDate"></p>
+          </div>
+          <h3 id="holderName"></h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
