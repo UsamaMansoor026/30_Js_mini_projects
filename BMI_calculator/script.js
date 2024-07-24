@@ -13,7 +13,7 @@ bmi_btn.addEventListener("click", (e) => {
 
   /* BMI calculations */
   const bmi = weight.value / height_in_meters ** 2;
-  BMIresult.innerHTML += bmi.toFixed(2);
+  BMIresult.innerHTML = bmi.toFixed(2);
 
   /* Conditions */
   if (bmi < 18.5) {
@@ -27,4 +27,5 @@ bmi_btn.addEventListener("click", (e) => {
   }
   weight.value = "";
   height.value = "";
+  bmi = 0;
 });
